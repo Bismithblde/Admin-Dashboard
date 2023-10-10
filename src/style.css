@@ -1,0 +1,118 @@
+
+
+* { margin: 0; padding: 0; border: none; }
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Source+Code+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Source+Code+Pro&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.website-grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 100px 200px;
+    grid-template-columns: 200px calc(100vw - 200px);
+    
+}
+.side-bar {
+    width: 200px;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #1e293b;
+    display: grid;
+    grid-template-rows: 100px repeat(4, 50px) 100px repeat(3, 50px);
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+}
+.grid-item-side {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 9px;
+    display: flex;
+    padding-left: 10px;
+    justify-content: center;
+    color: white;
+    padding-top: 30px;
+    
+    
+}
+.side-bar #top {
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    padding: 10px;
+    
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    
+}
+.side-bar #top img {
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+}
+
+.nav-bar {
+    background-color: #0f172a;
+    height: 175px;
+    display: grid;
+    grid-template-columns: 2fr 0.25fr 0.25fr 0.25fr 0.25fr;
+    grid-template-rows: 40% 60%;
+}
+
+.nav-bar #magnifysvg {
+    width: 3%;
+    fill: white;
+    padding-left: 5%;
+    padding-right: 2%;
+}
+.nav-bar #searchbardiv {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.nav-bar #searchbar {
+    width: 80%;
+    border-radius: 10px;
+    height: 50%;
+    font-family: 'Source Code Pro', monospace;
+    text-indent: 10px;
+}
+.nav-bar #bell {
+    fill: white;
+    width: 20%;
+}
+.nav-bar #bellcontainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.nav-bar #userpfp{
+
+}
+.nav-bar #userpfpcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav-bar #name-div {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+}
+.nav-bar #name {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 25px;
+}
